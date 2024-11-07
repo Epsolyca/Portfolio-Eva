@@ -1,4 +1,4 @@
-/* Global styles */
+/* Global styles */ 
 * {
     margin: 0;
     padding: 0;
@@ -33,6 +33,36 @@ header p {
     font-size: 1.2rem;
 }
 
+/* Menu de navigation */
+nav {
+    margin-top: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Flexbox pour aligner les éléments côte à côte */
+    justify-content: center; /* Centrer les éléments horizontalement */
+}
+
+nav ul li {
+    margin: 0 20px; /* Espacement entre les liens du menu */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* Style des Sections */
 section {
     padding: 2rem 0;
     margin-bottom: 2rem;
@@ -65,6 +95,7 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Footer */
 footer {
     background-color: #a2d5d8;
     color: #fff;
@@ -93,6 +124,13 @@ footer p {
     section h3 {
         font-size: 1.4rem;
     }
-}
 
+    nav ul {
+        flex-direction: column; /* Passe en vertical sur petits écrans */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Espacement vertical sur les petits écrans */
+    }
 }
