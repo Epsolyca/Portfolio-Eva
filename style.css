@@ -20,6 +20,7 @@ button {
     cursor: pointer;
     font-size: 16px;
     margin: 20px 0;
+    width: 100%;
 }
 
 button a {
@@ -107,12 +108,14 @@ section {
 /* Formulaire de contact */
 .contact-form {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     margin-top: 20px;
+    width: 100%;
 }
 
 .contact-form .left, .contact-form .right {
-    width: 45%;
+    width: 100%;
+    margin-bottom: 20px; /* Espacement entre les champs */
 }
 
 .contact-form label {
@@ -139,7 +142,18 @@ section {
 }
 
 button[type="submit"] {
+    background-color: #9AC8EB;
+    color: #F4CFDF;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
     width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #7ea4c8;
 }
 
 /* Style pour les boutons de sections */
@@ -158,10 +172,6 @@ section button {
 
 /* Réduction de la taille des boutons et text pour petits écrans */
 @media (max-width: 768px) {
-    .contact-form {
-        flex-direction: column;
-    }
-
     .contact-form .left, .contact-form .right {
         width: 100%;
     }
