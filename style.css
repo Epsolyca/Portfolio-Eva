@@ -1,136 +1,176 @@
-/* Global styles */ 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Style global */
 body {
     font-family: Arial, sans-serif;
-    background-color: #ece1d8;
-    color: #333;
-    line-height: 1.6;
+    background-color: #F7F6CF;
+    color: #5784BA;
+    margin: 0;
+    padding: 0;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
+a {
+    text-decoration: none;
+    color: #F4CFDF;
 }
 
-header {
-    background-color: #a2d5d8;
-    color: #fff;
-    padding: 2rem 0;
+button {
+    background-color: #9AC8EB;
+    color: #F4CFDF;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+button a {
+    color: inherit;
+}
+
+button:hover {
+    background-color: #7ea4c8;
+}
+
+/* Bande en haut et en bas */
+header, .bottom {
+    background-color: #9AC8EB;
+    color: #F4CFDF;
+    padding: 10px 0;
     text-align: center;
-}
-
-header h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-}
-
-header p {
-    font-size: 1.2rem;
-}
-
-/* Menu de navigation */
-nav {
-    margin-top: 1rem;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    display: flex; /* Flexbox pour aligner les éléments côte à côte */
-    justify-content: center; /* Centrer les éléments horizontalement */
 }
 
 nav ul li {
-    margin: 0 20px; /* Espacement entre les liens du menu */
+    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease;
+    color: #F4CFDF;
+    font-size: 18px;
 }
 
-nav ul li a:hover {
-    background-color: #333;
-    border-radius: 5px;
-}
-
-/* Style des Sections */
-section {
-    padding: 2rem 0;
-    margin-bottom: 2rem;
-}
-
-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-section h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-ul {
-    list-style-type: none;
-}
-
-ul li {
-    margin-bottom: 0.5rem;
-}
-
-a {
-    color: #4CAF50;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
 footer {
-    background-color: #a2d5d8;
-    color: #fff;
     text-align: center;
-    padding: 1rem 0;
+    padding: 20px;
 }
 
 footer p {
-    font-size: 1rem;
+    margin: 5px 0;
 }
 
-/* Responsive Design */
+footer a {
+    color: #5784BA;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    margin-bottom: 20px;
+}
+
+/* À propos de moi */
+#about .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.right {
+    max-width: 60%;
+}
+
+.right h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.right .subtitle {
+    font-size: 18px;
+    color: #5784BA;
+}
+
+.right .text p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Formulaire de contact */
+.contact-form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.contact-form .left, .contact-form .right {
+    width: 45%;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.contact-form .message {
+    width: 100%;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+button[type="submit"] {
+    width: 100%;
+}
+
+/* Style pour les boutons de sections */
+section button {
+    background-color: #9AC8EB;
+    color: #F4CFDF;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Réduction de la taille des boutons et text pour petits écrans */
 @media (max-width: 768px) {
+    .contact-form {
+        flex-direction: column;
+    }
+
+    .contact-form .left, .contact-form .right {
+        width: 100%;
+    }
+
     .container {
-        width: 90%;
+        flex-direction: column;
     }
 
-    header h1 {
-        font-size: 2.5rem;
-    }
-
-    section h2 {
-        font-size: 1.8rem;
-    }
-
-    section h3 {
-        font-size: 1.4rem;
-    }
-
-    nav ul {
-        flex-direction: column; /* Passe en vertical sur petits écrans */
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 10px 0; /* Espacement vertical sur les petits écrans */
+    .right {
+        max-width: 100%;
     }
 }
