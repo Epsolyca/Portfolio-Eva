@@ -82,8 +82,8 @@ section {
 }
 
 .left img {
-    width: 150px;  /* Réduction de la taille de la photo */
-    height: 150px;
+    width: 120px;  /* Réduction de la taille de la photo */
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -91,21 +91,26 @@ section {
 .right {
     text-align: center;
     width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .right h1 {
     font-size: 36px;
     margin: 0;
+    text-align: center;  /* Centré */
 }
 
 .right .subtitle {
     font-size: 18px;
     color: #5784BA;
+    text-align: center;  /* Centré */
 }
 
 .right .text p {
     font-size: 16px;
     line-height: 1.6;
+    text-align: left;  /* Aligner à gauche */
 }
 
 .right-image img {
@@ -182,6 +187,23 @@ section button {
     margin-right: auto;
 }
 
-/* Réduction de la taille des boutons et text pour petits écrans */
+/* Réduction de la largeur sur petits écrans */
 @media (max-width: 768px) {
-    .contact-form .left, .
+    .container {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+
+    .left img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .right-image img {
+        width: 250px;
+        height: 125px;
+    }
+}
