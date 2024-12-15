@@ -1,20 +1,20 @@
 /* Style global */
 body {
     font-family: Arial, sans-serif;
-    background-color: #EEE2DC; /* Couleur d'arrière-plan mise à jour */
-    color: #262220; /* Texte principal */
+    background-color: #EEE2DC; /* Nouvelle couleur d'arrière-plan */
+    color: #262220; /* Couleur du texte par défaut */
     margin: 0;
     padding: 0;
 }
 
 a {
     text-decoration: none;
-    color: #F7F1F0; /* Couleur des liens */
+    color: #F7F1F0; /* Texte blanc pour les liens sur les boutons */
 }
 
 button {
-    background-color: #A15C38; /* Boutons et bande en haut/bas */
-    color: #F7F1F0; /* Texte des boutons */
+    background-color: #A15C38; /* Nouvelle couleur des boutons */
+    color: #F7F1F0; /* Texte blanc sur les boutons */
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -25,17 +25,17 @@ button {
 }
 
 button a {
-    color: inherit;
+    color: inherit; /* Hérite de la couleur du texte du bouton */
 }
 
 button:hover {
-    background-color: #8C4D2F; /* Légèrement plus foncé au survol */
+    background-color: #8C4D32; /* Légère variation au survol */
 }
 
 /* Bande en haut et en bas */
 header, .bottom {
-    background-color: #A15C38;
-    color: #F7F1F0;
+    background-color: #A15C38; /* Nouvelle couleur des bandes */
+    color: #F7F1F0; /* Texte blanc */
     padding: 10px 0;
     text-align: center;
 }
@@ -43,6 +43,7 @@ header, .bottom {
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -51,13 +52,15 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #F7F1F0;
+    color: #F7F1F0; /* Texte blanc dans le menu */
     font-size: 18px;
 }
 
 footer {
     text-align: center;
     padding: 20px;
+    background-color: #A15C38; /* Fond des informations de contact */
+    color: #F7F1F0;
 }
 
 footer p {
@@ -65,13 +68,32 @@ footer p {
 }
 
 footer a {
-    color: #262220; /* Texte */
+    color: #262220; /* Couleur du texte pour les liens de contact */
 }
 
 /* Sections */
 section {
     padding: 50px 20px;
     margin-bottom: 20px;
+    text-align: center; /* Centre le contenu des sections */
+}
+
+/* Recentrer les boutons de section */
+section button {
+    background-color: #A15C38; /* Nouvelle couleur des boutons */
+    color: #F7F1F0; /* Texte blanc */
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px auto; /* Centre horizontalement */
+    display: block; /* Pour occuper une ligne */
+    text-align: center; /* Centre le texte */
+    width: 250px;
+}
+
+section button:hover {
+    background-color: #8C4D32; /* Variation au survol */
 }
 
 /* À propos de moi */
@@ -82,7 +104,7 @@ section {
 }
 
 .left img {
-    width: 120px; /* Taille réduite */
+    width: 120px; /* Taille de la photo de profil */
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
@@ -91,71 +113,31 @@ section {
 .right {
     text-align: center;
     width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 .right h1 {
     font-size: 36px;
     margin: 0;
-    text-align: center;
+    color: #262220; /* Couleur principale du texte */
 }
 
 .right .subtitle {
     font-size: 18px;
-    color: #262220;
-    text-align: center;
+    color: #262220; /* Texte aligné avec le thème */
+    margin-bottom: 10px;
 }
 
 .right .text p {
     font-size: 16px;
     line-height: 1.6;
-    text-align: left;
+    text-align: left; /* Alignement à gauche du texte */
 }
 
 .right-image img {
-    width: 300px;
+    width: 300px; /* Image rectangulaire */
     height: 150px;
     object-fit: cover;
-}
-
-/* Section "Parcours professionnel" */
-.career-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    position: relative;
-    margin: 50px auto;
-    max-width: 1000px;
-}
-
-.career-left, .career-right {
-    width: 45%; /* Chaque partie prend 45% de la largeur */
-    text-align: justify;
-    color: #262220; /* Texte */
-}
-
-.career-separator {
-    width: 2px; /* Largeur du trait */
-    background: linear-gradient(
-        to bottom,
-        transparent 0%,
-        #A15C38 50%,
-        transparent 100%
-    );
-    background-size: 100% 20px; /* Crée l'effet ondulé */
-    height: 100%; /* Prend toute la hauteur */
-    animation: wave 2s infinite alternate; /* Animation */
-    margin: 0 20px;
-}
-
-@keyframes wave {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(10px);
-    }
 }
 
 /* Formulaire de contact */
@@ -164,22 +146,26 @@ section {
     flex-direction: column;
     margin-top: 20px;
     width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
-.contact-form .left, .contact-form .right {
-    width: 100%;
+.contact-form .left,
+.contact-form .right,
+.contact-form .message {
+    width: 100%; /* Alignement des champs */
     margin-bottom: 20px;
+    text-align: left;
 }
 
 .contact-form label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    color: #262220; /* Couleur du texte */
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
     padding: 10px;
     font-size: 16px;
@@ -188,17 +174,13 @@ section {
     border-radius: 5px;
 }
 
-.contact-form .message {
-    width: 100%;
-}
-
 .contact-form textarea {
     height: 150px;
 }
 
 button[type="submit"] {
-    background-color: #A15C38;
-    color: #F7F1F0;
+    background-color: #A15C38; /* Couleur du bouton envoyer */
+    color: #F7F1F0; /* Texte blanc */
     padding: 10px 20px;
     border: none;
     font-size: 16px;
@@ -208,41 +190,13 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #8C4D2F;
-}
-
-/* Style des boutons de sections */
-section button {
-    background-color: #A15C38;
-    color: #F7F1F0;
-    padding: 10px 20px;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
-    width: 250px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: #8C4D32;
 }
 
 /* Réduction de la largeur sur petits écrans */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
-    }
-
-    .career-container {
-        flex-direction: column;
-    }
-
-    .career-left, .career-right {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .career-separator {
-        display: none; /* Masque le trait ondulé sur petits écrans */
     }
 
     .contact-form {
@@ -257,5 +211,9 @@ section button {
     .right-image img {
         width: 250px;
         height: 125px;
+    }
+
+    section button {
+        width: 200px; /* Ajuste les boutons pour petits écrans */
     }
 }
