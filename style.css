@@ -1,20 +1,20 @@
 /* Style global */
 body {
     font-family: Arial, sans-serif;
-    background-color: #F7F6CF;
-    color: #5784BA;
+    background-color: #EEE2DC; /* Nouvelle couleur */
+    color: #262220; /* Texte général */
     margin: 0;
     padding: 0;
 }
 
 a {
     text-decoration: none;
-    color: #F4CFDF;
+    color: #F7F1F0; /* Liens sur bandes */
 }
 
 button {
-    background-color: #9AC8EB;
-    color: #F4CFDF;
+    background-color: #A15C38; /* Couleur boutons */
+    color: #F7F1F0; /* Texte sur boutons */
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -24,18 +24,14 @@ button {
     text-align: center;
 }
 
-button a {
-    color: inherit;
-}
-
 button:hover {
-    background-color: #7ea4c8;
+    background-color: #8B4A2C; /* Légère variation au survol */
 }
 
 /* Bande en haut et en bas */
 header, .bottom {
-    background-color: #9AC8EB;
-    color: #F4CFDF;
+    background-color: #A15C38; /* Nouvelle couleur */
+    color: #F7F1F0; /* Texte */
     padding: 10px 0;
     text-align: center;
 }
@@ -51,7 +47,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #F4CFDF;
+    color: #F7F1F0; /* Texte des liens */
     font-size: 18px;
 }
 
@@ -65,7 +61,7 @@ footer p {
 }
 
 footer a {
-    color: #5784BA;
+    color: #A15C38; /* Liens dans le footer */
 }
 
 /* Sections */
@@ -82,7 +78,7 @@ section {
 }
 
 .left img {
-    width: 120px;  /* Réduction de la taille de la photo */
+    width: 120px;
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
@@ -98,23 +94,21 @@ section {
 .right h1 {
     font-size: 36px;
     margin: 0;
-    text-align: center;  /* Centré */
 }
 
 .right .subtitle {
     font-size: 18px;
-    color: #5784BA;
-    text-align: center;  /* Centré */
+    color: #262220;
 }
 
 .right .text p {
     font-size: 16px;
     line-height: 1.6;
-    text-align: left;  /* Aligner à gauche */
+    text-align: left;
 }
 
 .right-image img {
-    width: 300px;  /* Image rectangulaire deux fois plus grande */
+    width: 300px;
     height: 150px;
     object-fit: cover;
 }
@@ -129,9 +123,9 @@ section {
     margin-right: auto;
 }
 
-.contact-form .left, .contact-form .right {
+.contact-form .left {
     width: 100%;
-    margin-bottom: 20px; /* Espacement entre les champs */
+    margin-bottom: 20px;
 }
 
 .contact-form label {
@@ -149,17 +143,13 @@ section {
     border-radius: 5px;
 }
 
-.contact-form .message {
-    width: 100%;
-}
-
 .contact-form textarea {
     height: 150px;
 }
 
 button[type="submit"] {
-    background-color: #9AC8EB;
-    color: #F4CFDF;
+    background-color: #A15C38; /* Couleur bouton formulaire */
+    color: #F7F1F0;
     padding: 10px 20px;
     border: none;
     font-size: 16px;
@@ -169,22 +159,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #7ea4c8;
-}
-
-/* Style pour les boutons de sections */
-section button {
-    background-color: #9AC8EB;
-    color: #F4CFDF;
-    padding: 10px 20px;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
-    width: 250px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: #8B4A2C;
 }
 
 /* Réduction de la largeur sur petits écrans */
