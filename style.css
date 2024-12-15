@@ -22,6 +22,7 @@ button {
     margin: 20px 0;
     display: inline-block;
     text-align: center;
+    width: 100%; /* Largeur complète pour centrer */
 }
 
 button:hover {
@@ -68,97 +69,21 @@ footer a {
 section {
     padding: 50px 20px;
     margin-bottom: 20px;
+    text-align: center; /* Centrer le texte dans les sections */
 }
 
-/* À propos de moi */
-#about .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.left img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.right {
-    text-align: center;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.right h1 {
-    font-size: 36px;
-    margin: 0;
-}
-
-.right .subtitle {
-    font-size: 18px;
-    color: #262220;
-}
-
-.right .text p {
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: left;
-}
-
-.right-image img {
-    width: 300px;
-    height: 150px;
-    object-fit: cover;
-}
-
-/* Formulaire de contact */
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.contact-form .left {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
-.contact-form textarea {
-    height: 150px;
-}
-
-button[type="submit"] {
-    background-color: #A15C38; /* Couleur bouton formulaire */
+.section-button {
+    background-color: #A15C38;
     color: #F7F1F0;
     padding: 10px 20px;
     border: none;
-    font-size: 16px;
     cursor: pointer;
-    margin-top: 20px;
-    width: 100%;
+    font-size: 16px;
+    width: 100%; /* Largeur complète pour centrer */
+    text-align: center;
 }
 
-button[type="submit"]:hover {
+.section-button:hover {
     background-color: #8B4A2C;
 }
 
