@@ -1,20 +1,20 @@
 /* Style global */
 body {
     font-family: Arial, sans-serif;
-    background-color: #EEE2DC; /* Nouvelle couleur d'arrière-plan */
-    color: #262220; /* Couleur du texte par défaut */
+    background-color: #EEE2DC; /* Nouvelle couleur */
+    color: #262220; /* Texte général */
     margin: 0;
     padding: 0;
 }
 
 a {
     text-decoration: none;
-    color: #F7F1F0; /* Texte blanc pour les liens sur les boutons */
+    color: #F7F1F0; /* Liens sur bandes */
 }
 
 button {
-    background-color: #A15C38; /* Nouvelle couleur des boutons */
-    color: #F7F1F0; /* Texte blanc sur les boutons */
+    background-color: #A15C38; /* Couleur boutons */
+    color: #F7F1F0; /* Texte sur boutons */
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -24,18 +24,14 @@ button {
     text-align: center;
 }
 
-button a {
-    color: inherit; /* Hérite de la couleur du texte du bouton */
-}
-
 button:hover {
-    background-color: #8C4D32; /* Légère variation au survol */
+    background-color: #8B4A2C; /* Légère variation au survol */
 }
 
 /* Bande en haut et en bas */
 header, .bottom {
-    background-color: #A15C38; /* Nouvelle couleur des bandes */
-    color: #F7F1F0; /* Texte blanc */
+    background-color: #A15C38; /* Nouvelle couleur */
+    color: #F7F1F0; /* Texte */
     padding: 10px 0;
     text-align: center;
 }
@@ -43,7 +39,6 @@ header, .bottom {
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
 }
 
 nav ul li {
@@ -52,15 +47,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #F7F1F0; /* Texte blanc dans le menu */
+    color: #F7F1F0; /* Texte des liens */
     font-size: 18px;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #A15C38; /* Fond des informations de contact */
-    color: #F7F1F0;
 }
 
 footer p {
@@ -68,32 +61,13 @@ footer p {
 }
 
 footer a {
-    color: #262220; /* Couleur du texte pour les liens de contact */
+    color: #A15C38; /* Liens dans le footer */
 }
 
 /* Sections */
 section {
     padding: 50px 20px;
     margin-bottom: 20px;
-    text-align: center; /* Centre le contenu des sections */
-}
-
-/* Recentrer les boutons de section */
-section button {
-    background-color: #A15C38; /* Nouvelle couleur des boutons */
-    color: #F7F1F0; /* Texte blanc */
-    padding: 10px 20px;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    margin: 20px auto; /* Centre horizontalement */
-    display: block; /* Pour occuper une ligne */
-    text-align: center; /* Centre le texte */
-    width: 250px;
-}
-
-section button:hover {
-    background-color: #8C4D32; /* Variation au survol */
 }
 
 /* À propos de moi */
@@ -104,7 +78,7 @@ section button:hover {
 }
 
 .left img {
-    width: 120px; /* Taille de la photo de profil */
+    width: 120px;
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
@@ -113,29 +87,28 @@ section button:hover {
 .right {
     text-align: center;
     width: 50%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .right h1 {
     font-size: 36px;
     margin: 0;
-    color: #262220; /* Couleur principale du texte */
 }
 
 .right .subtitle {
     font-size: 18px;
-    color: #262220; /* Texte aligné avec le thème */
-    margin-bottom: 10px;
+    color: #262220;
 }
 
 .right .text p {
     font-size: 16px;
     line-height: 1.6;
-    text-align: left; /* Alignement à gauche du texte */
+    text-align: left;
 }
 
 .right-image img {
-    width: 300px; /* Image rectangulaire */
+    width: 300px;
     height: 150px;
     object-fit: cover;
 }
@@ -146,26 +119,22 @@ section button:hover {
     flex-direction: column;
     margin-top: 20px;
     width: 50%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.contact-form .left,
-.contact-form .right,
-.contact-form .message {
-    width: 100%; /* Alignement des champs */
+.contact-form .left {
+    width: 100%;
     margin-bottom: 20px;
-    text-align: left;
 }
 
 .contact-form label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #262220; /* Couleur du texte */
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-form input, .contact-form textarea {
     width: 100%;
     padding: 10px;
     font-size: 16px;
@@ -179,8 +148,8 @@ section button:hover {
 }
 
 button[type="submit"] {
-    background-color: #A15C38; /* Couleur du bouton envoyer */
-    color: #F7F1F0; /* Texte blanc */
+    background-color: #A15C38; /* Couleur bouton formulaire */
+    color: #F7F1F0;
     padding: 10px 20px;
     border: none;
     font-size: 16px;
@@ -190,7 +159,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #8C4D32;
+    background-color: #8B4A2C;
 }
 
 /* Réduction de la largeur sur petits écrans */
@@ -211,9 +180,5 @@ button[type="submit"]:hover {
     .right-image img {
         width: 250px;
         height: 125px;
-    }
-
-    section button {
-        width: 200px; /* Ajuste les boutons pour petits écrans */
     }
 }
