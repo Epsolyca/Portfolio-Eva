@@ -1,7 +1,7 @@
 /* Style global */
 body {
     font-family: Arial, sans-serif;
-    background-color: #EEE2DC; /* Couleur d'arrière-plan */
+    background-color: #EEE2DC; /* Couleur d'arrière-plan mise à jour */
     color: #262220; /* Texte principal */
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ a {
 }
 
 button {
-    background-color: #A15C38; /* Couleur principale */
+    background-color: #A15C38; /* Boutons et bande en haut/bas */
     color: #F7F1F0; /* Texte des boutons */
     padding: 10px 20px;
     border: none;
@@ -25,15 +25,15 @@ button {
 }
 
 button a {
-    color: inherit; /* Hérite de la couleur parent */
+    color: inherit;
 }
 
 button:hover {
-    background-color: #8C4D2F; /* Effet au survol */
+    background-color: #8C4D2F; /* Légèrement plus foncé au survol */
 }
 
-/* Bande en haut */
-header {
+/* Bande en haut et en bas */
+header, .bottom {
     background-color: #A15C38;
     color: #F7F1F0;
     padding: 10px 0;
@@ -55,30 +55,71 @@ nav ul li a {
     font-size: 18px;
 }
 
-/* Suppression de "Compétences" */
-nav ul li:nth-child(2) {
-    display: none; /* Retire la mention "compétences" */
-}
-
-/* Boutons principaux centrés */
-.section-button {
-    display: block;
-    margin: 20px auto; /* Centre le bouton horizontalement */
-    background-color: #A15C38; /* Couleur identique */
-    color: #F7F1F0;
-    padding: 10px 20px;
-    border: none;
-    font-size: 16px;
+footer {
     text-align: center;
-    cursor: pointer;
-    width: 250px;
+    padding: 20px;
 }
 
-.section-button:hover {
-    background-color: #8C4D2F; /* Effet hover */
+footer p {
+    margin: 5px 0;
 }
 
-/* Parcours professionnel */
+footer a {
+    color: #262220; /* Texte */
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    margin-bottom: 20px;
+}
+
+/* À propos de moi */
+#about .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left img {
+    width: 120px; /* Taille réduite */
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.right {
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right h1 {
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+}
+
+.right .subtitle {
+    font-size: 18px;
+    color: #262220;
+    text-align: center;
+}
+
+.right .text p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.right-image img {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Section "Parcours professionnel" */
 .career-container {
     display: flex;
     justify-content: space-between;
@@ -91,20 +132,20 @@ nav ul li:nth-child(2) {
 .career-left, .career-right {
     width: 45%; /* Chaque partie prend 45% de la largeur */
     text-align: justify;
-    color: #262220;
+    color: #262220; /* Texte */
 }
 
 .career-separator {
-    width: 2px;
+    width: 2px; /* Largeur du trait */
     background: linear-gradient(
         to bottom,
         transparent 0%,
         #A15C38 50%,
         transparent 100%
     );
-    background-size: 100% 20px;
-    height: 100%;
-    animation: wave 2s infinite alternate;
+    background-size: 100% 20px; /* Crée l'effet ondulé */
+    height: 100%; /* Prend toute la hauteur */
+    animation: wave 2s infinite alternate; /* Animation */
     margin: 0 20px;
 }
 
@@ -117,15 +158,78 @@ nav ul li:nth-child(2) {
     }
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    nav ul {
-        text-align: center;
-    }
+/* Formulaire de contact */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
+.contact-form .left, .contact-form .right {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.contact-form .message {
+    width: 100%;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+button[type="submit"] {
+    background-color: #A15C38;
+    color: #F7F1F0;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #8C4D2F;
+}
+
+/* Style des boutons de sections */
+section button {
+    background-color: #A15C38;
+    color: #F7F1F0;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Réduction de la largeur sur petits écrans */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
     }
 
     .career-container {
@@ -138,6 +242,20 @@ nav ul li:nth-child(2) {
     }
 
     .career-separator {
-        display: none;
+        display: none; /* Masque le trait ondulé sur petits écrans */
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+
+    .left img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .right-image img {
+        width: 250px;
+        height: 125px;
     }
 }
