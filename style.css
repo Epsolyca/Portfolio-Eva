@@ -1,130 +1,405 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eva Doffin</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Bande en haut -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">À propos de moi</a></li>
-                <li><a href="#career">Parcours professionnel</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EEE2DC; /* Nouvelle couleur d'arrière-plan */
+    color: #262220; /* Couleur du texte par défaut */
+    margin: 0;
+    padding: 0;
+}
 
-    <!-- Première section : À propos de moi -->
-    <section id="about">
-        <div class="container">
-            <div class="left">
-                <img src="IMG_2406.jpg" alt="Photo d'Eva" class="photoTop">
-            </div>
-            <div class="right">
-                <p class="title">Eva Doffin</p>
-                <p class="subtitle"><strong>Étudiante en Licence commercialisation de produit et service sportif</strong></p>
-                <p class="subtitle"><em>Chargée d'accueil - Monitrice de voile</em></p>
-                <button><a href="#about">À propos de moi</a></button>
-            </div>
-            <div class="text-middle">
-                <div class="text">
-                    <p>Je m'appelle Eva Doffin, j'ai 21 ans et je suis actuellement étudiante en troisième année de licence professionnelle à l'ILEPS de Cergy, spécialisée dans la commercialisation de produits et services sportifs. Passionnée par les sports nautiques, je travaille également en alternance dans une base nautique, où je suis chargée d'accueil en basse saison et monitrice de catamaran en mer l'été.</p>
-                    <p>En dehors de mes études et de mon travail, je passe beaucoup de temps avec mes amis qui sont très importants à mes yeux. J'adore également les sports nautiques et surtout de la voile à laquelle j'aime initier tout mon entourage. Je suis également une grande passionnée de jeux vidéo et de lecture, univers où j'adore m'évader pendant des heures.</p>
-                    <p>J'ai pour objectif de me lancer dans la communication et l'évènementiel dans les sports nautiques afin de transmettre ma passion au quotidien.</p>
-                </div>
-            </div>
-            <div class="right-image">
-                <img src="1000035713.jpg" alt="Autre photo" class="large-photo">
-            </div>
-        </div>
-    </section>
+a {
+    text-decoration: none;
+    color: #F7F1F0; /* Texte blanc pour les liens sur les boutons */
+}
 
-    <!-- Section : Parcours professionnel -->
-    <section id="career" class="button-parcour">
-        <button><a href="#career">Parcours professionnel</a></button>
-        <p class="title section-title">Expériences professionnelles</p>
-         <p class="subtitle"><strong>Chargée d'accueil - Monitrice de voile (alternance) 2023 - Présent</strong></p>
-         <p class="subtitleA"><em>EOLIA Picardie - Fort Mahon Plage</em></p>
-            <p class="textparcour">Chargée d'accueil en basse saison. Accueil client, gestion de la caisse, du téléphone et des mails. Réalisation de projet de communication et prise de plan photos et vidéo.  
-            Monitrice de catamaran en mer pendant l'été. Chargée de la préparation du matériel, l'accueil des clients, briefing, réalisation d'une séance en mer et rangement. 
-        </p>
+button {
+    background-color: #A15C38; /* Nouvelle couleur des boutons */
+    color: #F7F1F0; /* Texte blanc sur les boutons */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px 0;
+    display: inline-block;
+    text-align: center;
+}
 
-        <div class="space">
-            <p class="subtitle"><strong>Monitrice de voile juillet - août 2022</strong></p>
-            <p class="subtitleA"><em>CNBC- Barneville Carteret</em></p>
-            <p class="textparcour">Saison en tant que monitrice de catamaran et aide monitrice sur d'autres supports. Dans un port et en mer. Gestion de l'espace et des autres usagers du port. Accueil des clients, briefing, réalisation d'une séance en mer et rangement.  Assistance auprès des groupes d'enfants sur les séances pour les plus jeunes. </p>
-        </div>
+button a {
+    color: inherit; /* Hérite de la couleur du texte du bouton */
+}
 
-        <div class="spaceA">
-            <p class="subtitle"><strong>CQP IV - Certificat de qualification professionnelle Initiateur Voile juillet - août 2021</strong></p>
-            <p class="subtitleA"><em>Association EVEILS - Fort Mahon Plage</em></p>
-            <p class="textparcour">Formation visant à pouvoir enseigner la voile et plus spécifiquement le catamaran. Permis bateau côtier. Sécurité en mer, apprentissage de la prise en charge de groupe, préparation de séances évolutives, gestions des conflits. </p>
-        </div>
+button:hover {
+    background-color: #8C4D32; /* Légère variation au survol */
+}
 
-        <div class="spaceB">
-            <p class="subtitle"><strong>Bénévolat aide monitrice 2017 - 2021</strong></p>
-            <p class="subtitleA"><em>Association EVEILS - Fort Mahon Plage</em></p>
-            <p class="textparcour">Préparation du matériel (gilets, combinaisons, bateaux. Accueil client. Petites réparations sur le matériel. Préparation de contenu de séance, assistance de la sécurité lors des séances. </p>
-        </div>
-        
-        <div class="right-text-competance">
-            <p class="section-title">Expériences scolaires</p>
-            <p class=""><strong>2022 - Présent Licence Commercialisation de Produit et Services Sportifs</strong></p>
-            <p class=""><em>ILEPS - Université de Cergy Prefecture</em></p>
-            <p class="">Licence professionnelle ayant pour but de former aux métiers du sports comprenant 4 mois de stages durant la première année puis en alternance sur la deuxième et troisième année. Enseignement des matières scientifiques du sport (biomécanique, psychologie, physiologie) et des matières commerciales (management, marketing, communication,...). </p>
-        </div>
+/* Bande en haut et en bas */
+header, .bottom {
+    background-color: #A15C38; /* Nouvelle couleur des bandes */
+    color: #F7F1F0; /* Texte blanc */
+    padding: 10px 0;
+    text-align: center;
+}
 
-        <div class="right-text-competanceA">
-            <p class=""><strong>2021-2022 Licence LEA Anglais - Allemand</strong></p>
-            <p class=""><em>UPJV (université de picardie jules vernes) - Amiens</em></p>
-            <p class="">Première année de licence en langue étrangères appliquées anglais allemand validée. Compréhension et expression orale et écrite, grammaire, histoire des pays allemands, anglais et américains.</p>
-        </div>
+.bottom {
+    position: absolute;
+    margin-top: 90px;
+}
 
-        
-        <div class="right-text-competanceB">
-            <p class=""><strong>2021 Baccalauréat mathématiques - physique chimie</strong></p>
-            <p class="">Baccalauréat général spécialité mathématiques physique chimie et informatique
-                Mathématiques : notions sur la géométrie, suites, probabilités, démonstrations, vecteurs, etc...
-                Physique Chimie : notions sur les molécules, systèmes chimiques, milieu acide / basique, forces et loi de Newton, etc... 
-                Informatique : apprentissages des bases de quelques langages comme Python, Arduino, HTML</p>
-        </div>
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
-    </section>
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
 
-    <!-- Section : Contact -->
-    <section id="contact" class="button-contact">
-        <button><a href="#contact">Contact</a></button>
-        <div class="contact-form">
-            <div class="left">
-                <label for="name">Nom</label>
-                <input type="text" id="name" name="name">
-            </div>
-            <div class="left">
-                <label for="email">Adresse mail</label>
-                <input type="email" id="email" name="email">
-            </div>
-            <div class="message">
-                <label for="message">Message</label>
-                <textarea id="message" name="message"></textarea>
-            </div>
-            <button type="submit">Envoyer</button>
-        </div>
-    </section>
+nav ul li a {
+    color: #F7F1F0; /* Texte blanc dans le menu */
+    font-size: 18px;
+}
 
-    <!-- Informations de contact -->
-    <footer>
-        <p>Email : <a href="mailto:e.doffin@ileps.fr">e.doffin@ileps.fr</a></p>
-        <p>Numéro de téléphone :<a href="tel:0785612414"> 07 85 61 24 14</a></p>
-        <p>LinkedIn : <a href="https://www.linkedin.com/in/evadoffin">Eva Doffin</a></p>
-    </footer>
+footer {
+    position: absolute;
+    top: 2300px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #A15C38; /* Fond des informations de contact */
+    color: #F7F1F0;
+}
 
-    <!-- Bande en bas -->
-    <footer class="bottom">
-        <p>&copy; Eva Doffin</p>
-    </footer>
-</body>
-</html>
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #262220; /* Couleur du texte pour les liens de contact */
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    margin-bottom: 20px;
+    text-align: center; /* Centre le contenu des sections */
+}
+
+/* Ajout d'une classe spécifique pour les titres de sections */
+.section-title {
+    font-size: 41px; /* Police originale de 36px + 5 */
+    color: #D6955B;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Recentrer les boutons de section */
+section button {
+    background-color: #A15C38; /* Nouvelle couleur des boutons */
+    color: #F7F1F0; /* Texte blanc */
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px auto; /* Centre horizontalement */
+    display: block; /* Pour occuper une ligne */
+    text-align: center; /* Centre le texte */
+    width: 250px;
+}
+
+section button:hover {
+    background-color: #8C4D32; /* Variation au survol */
+}
+
+.left img {
+    width: 180px; /* Taille de la photo de profil */
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.photoTop {
+    position: absolute;
+    left: 15%;
+}
+
+.right {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.right .title {
+    font-size: 40px;
+    margin: 0;
+    color: #D6955B; /* Couleur principale du texte */
+    font-weight: bold;
+}
+
+.right .subtitle {
+    font-size: 20px;
+    color: #262220; /* Texte aligné avec le thème */
+    margin-bottom: 10px;
+}
+
+.right-image img {
+    position: absolute;
+    object-fit: cover;
+    right: 10%;
+    height: 35%;
+    width: auto;
+}
+
+.text-middle {
+    position: absolute;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: auto;
+    width: 65%;
+    left: 7%;
+}
+/* Formulaire de contact */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contact-form .left,
+.contact-form .right,
+.contact-form .message {
+    width: 100%; /* Alignement des champs */
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #262220; /* Couleur du texte */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+button[type="submit"] {
+    background-color: #A15C38; /* Couleur du bouton envoyer */
+    color: #F7F1F0; /* Texte blanc */
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #8C4D32;
+}
+
+.button-parcour {
+    position: relative;
+    top: 200px;
+    left: 0px;
+}
+
+.button-contact {
+    position: relative;
+    top: 600px;
+}
+
+.button-parcour .title,
+.button-parcour .subtitle,
+.button-parcour .subtitleA {
+    position: relative;
+    text-align: left;
+    left: 50px;
+    margin: 5px 0;
+}
+
+.button-parcour .subtitleA {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.textparcour {
+    position: absolute;
+    text-align: left;
+    left: 50px;
+    width: 40%;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 0;
+}
+
+.space, .spaceA, .spaceB {
+    position: relative;
+    top: 150px;
+    margin-bottom: 30px;
+}
+
+.space .subtitle, 
+.spaceA .subtitle,
+.spaceB .subtitle {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.space .subtitleA,
+.spaceA .subtitleA,
+.spaceB .subtitleA {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+/* Media query existante reste inchangée */
+
+.right-text-competance {
+    position: absolute;
+    top : 100px;
+    text-align: left;
+    right: 5%;
+    width: 40%;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: auto;
+}
+
+.right-text-competanceA {
+    position: absolute;
+    top: 450px;
+    text-align: left;
+    right: 5%;
+    width: 40%;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: auto;
+}
+
+.spaceA {
+    position: relative;
+    top: 320px;
+}
+
+.right-text-competanceB {
+    position: absolute;
+    top: 650px;
+    text-align: left;
+    right: 5%;
+    width: 40%;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: auto;
+}
+
+.spaceB {
+    position: relative;
+    top: 450px;
+}
+
+/* Nouvelle partie media query uniquement pour mobile */
+@media (max-width: 769px) {
+    /* Reset positions */
+    .button-parcour,
+    .space,
+    .spaceA,
+    .spaceB,
+    .photoTop,
+    .text-middle,
+    .right-image img,
+    .textparcour,
+    .right-text-competance,
+    .right-text-competanceA,
+    .right-text-competanceB,
+    .button-contact,
+    footer,
+    .bottom {
+        position: static !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+    }
+
+    /* Navigation */
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* About section */
+    .photoTop {
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .text-middle {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .right-image img {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    /* Expériences */
+    .button-parcour {
+        margin: 20px 0;
+    }
+
+    .button-parcour .title,
+    .button-parcour .subtitle,
+    .button-parcour .subtitleA {
+        margin-left: 5%;
+        text-align: left;
+        width: 90%;
+    }
+
+    .textparcour {
+        width: 90%;
+        margin: 20px 5%;
+    }
+
+    .right-text-competance,
+    .right-text-competanceA,
+    .right-text-competanceB {
+        width: 90%;
+        margin: 20px 5%;
+    }
+
+    /* Contact */
+    .button-contact {
+        margin: 20px 0;
+    }
+
+    .contact-form {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    /* Footer */
+    footer {
+        margin-top: 30px;
+    }
+
+    .bottom {
+        margin-top: 30px;
+    }
+}
