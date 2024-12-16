@@ -40,6 +40,11 @@ header, .bottom {
     text-align: center;
 }
 
+.bottom {
+    position: absolute;
+    margin-top: 90px;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -57,8 +62,11 @@ nav ul li a {
 }
 
 footer {
+    position: absolute;
+    top: 2300px;
+    width: 100%;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     background-color: #A15C38; /* Fond des informations de contact */
     color: #F7F1F0;
 }
@@ -96,18 +104,16 @@ section button:hover {
     background-color: #8C4D32; /* Variation au survol */
 }
 
-/* À propos de moi */
-#about .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .left img {
-    width: 120px; /* Taille de la photo de profil */
-    height: 120px;
+    width: 180px; /* Taille de la photo de profil */
+    height: 180px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.photoTop {
+    position: absolute;
+    left: 15%;
 }
 
 .right {
@@ -116,7 +122,7 @@ section button:hover {
     margin: 0 auto;
 }
 
-.right h1 {
+.right .title {
     font-size: 36px;
     margin: 0;
     color: #262220; /* Couleur principale du texte */
@@ -128,18 +134,23 @@ section button:hover {
     margin-bottom: 10px;
 }
 
-.right .text p {
+.right-image img {
+    position: absolute;
+    object-fit: cover;
+    right: 15%;
+    height: 40%;
+    width: auto;
+}
+
+.text-middle {
+    position: absolute;
+    text-align: left;
     font-size: 16px;
     line-height: 1.6;
-    text-align: left; /* Alignement à gauche du texte */
+    margin: auto;
+    width: 50%;
+    left: 5%;
 }
-
-.right-image img {
-    width: 300px; /* Image rectangulaire */
-    height: 150px;
-    object-fit: cover;
-}
-
 /* Formulaire de contact */
 .contact-form {
     display: flex;
@@ -216,4 +227,88 @@ button[type="submit"]:hover {
     section button {
         width: 200px; /* Ajuste les boutons pour petits écrans */
     }
+}
+
+.button-parcour {
+    position: relative;
+    top: 200px;
+    left: 0px;
+}
+
+.button-contact {
+    position: relative;
+    top: 700px;
+}
+
+.button-parcour .title{
+    position: relative;
+    text-align: left;
+    left: 55px;
+}
+.button-parcour .subtitle{
+    position: relative;
+    text-align: left;
+    left: 50px;
+}
+
+.button-parcour .subtitleA{
+    position: relative;
+    text-align: left;
+    left: 100px;
+}
+
+.textparcour{
+    position: absolute;
+    text-align: left;
+    left: 40px;
+    width: 40%;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: auto;
+}
+.space {
+    position: relative;
+    top: 150px;
+}
+
+.right-text-competance {
+    position: absolute;
+    text-align: left;
+    right: 5%;
+    width: 40%;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: auto;
+}
+
+.right-text-competanceA {
+    position: absolute;
+    top: 500px;
+    text-align: left;
+    right: 5%;
+    width: 40%;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: auto;
+}
+
+.spaceA {
+    position: relative;
+    top: 320px;
+}
+
+.right-text-competanceB {
+    position: absolute;
+    top: 700px;
+    text-align: left;
+    right: 5%;
+    width: 40%;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: auto;
+}
+
+.spaceB {
+    position: relative;
+    top: 520px;
 }
