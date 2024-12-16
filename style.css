@@ -3,8 +3,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: #EEE2DC; /* Nouvelle couleur d'arrière-plan */
     color: #262220; /* Couleur du texte par défaut */
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
 }
 
 a {
@@ -19,9 +19,9 @@ button {
     border: none;
     cursor: pointer;
     font-size: 16px;
-    margin: 20px 0;
+    margin: 20px;
     display: inline-block;
-    text-align: center;
+    text-align: left;
 }
 
 button a {
@@ -37,7 +37,7 @@ header, .bottom {
     background-color: #A15C38; /* Nouvelle couleur des bandes */
     color: #F7F1F0; /* Texte blanc */
     padding: 10px 0;
-    text-align: center;
+    text-align: left;
 }
 
 .bottom {
@@ -241,17 +241,17 @@ button[type="submit"]:hover {
 .textparcour {
     position: absolute;
     text-align: left;
-    left: 50px;
     width: 40%;
     font-size: 16px;
     line-height: 1.6;
-    margin-top: 0;
+    margin-left: 50px;
 }
 
 .space, .spaceA, .spaceB {
     position: relative;
     top: 150px;
     margin-bottom: 30px;
+
 }
 
 .space .subtitle, 
@@ -295,7 +295,9 @@ button[type="submit"]:hover {
 .spaceA {
     position: relative;
     top: 320px;
+    margin: auto;
 }
+
 
 .right-text-competanceB {
     position: absolute;
