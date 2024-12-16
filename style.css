@@ -37,7 +37,7 @@ header, .bottom {
     background-color: #A15C38; /* Nouvelle couleur des bandes */
     color: #F7F1F0; /* Texte blanc */
     padding: 10px 0;
-    text-align: left;
+    text-align: center;
 }
 
 .bottom {
